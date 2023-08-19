@@ -1,8 +1,8 @@
-import styles from "./Hero.module.scss";
+// import styles from "./Hero.module.scss";
 
 export const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section>
       <div className="container">
         <div>
           Prepare to be transported beyond the boundaries of traditional gaming
@@ -14,7 +14,7 @@ export const Hero = () => {
           <img src="" alt="" />
         </div>
       </div>
-      <div className={styles.container}>
+      <div className="container" style={{ padding: 0 }}>
         <h1>DEXOLA</h1>
       </div>
     </section>
