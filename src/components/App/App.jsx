@@ -1,8 +1,8 @@
 import { Header } from "../Header/Header";
 import { Hero } from "../Hero/Hero";
 import { Features } from "../Features/Features";
-import { Top } from "../Top/Top";
-import { Join } from "../Join/Join";
+import { TopNfts } from "../TopNfts/TopNfts";
+import { JoinUs } from "../JoinUs/JoinUs";
 import { Footer } from "../Footer/Footer";
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       <main>
         <Hero />
         <Features />
-        <Join />
-        <Top />
+        <TopNfts />
+        <JoinUs />
       </main>
       <Footer />
     </>
