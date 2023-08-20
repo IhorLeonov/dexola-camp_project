@@ -1,10 +1,9 @@
-// import styles from "./JoinUs.module.scss";
+import styles from "./JoinUs.module.scss";
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 
 export const JoinUs = () => {
   return (
-    <section className="container">
-      {/* <div className="container"> */}
+    <section className={"container" + " " + styles["join"]}>
       <SectionTitle text="Join Us" numb="03" />
 
       <div className="join">
@@ -18,7 +17,6 @@ export const JoinUs = () => {
         </p>
       </div>
       <form action=""></form>
-      {/* </div> */}
     </section>
   );
 };

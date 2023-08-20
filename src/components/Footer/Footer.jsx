@@ -1,17 +1,25 @@
 import styles from "./Footer.module.scss";
-const { footer, socials__list, socials__item, designed, copyright } = styles;
 
 export const Footer = () => {
   return (
-    <footer className={footer} style={{ padding: 0 }}>
-      <p className={designed}>Designed by Dexola - 2023</p>
-      <ul className={socials__list}>
-        <li className={socials__item}></li>
-        <li className={socials__item}></li>
-        <li className={socials__item}></li>
-        <li className={socials__item}></li>
+    <footer
+      className={styles["footer"]}
+      style={{ paddingLeft: 0, paddingRight: 0 }}
+    >
+      <ul className={styles["socials-list"] + " " + styles["footer__item"]}>
+        <li className={styles["socials-list__item"]}></li>
+        <li className={styles["socials-list__item"]}></li>
+        <li className={styles["socials-list__item"]}></li>
+        <li className={styles["socials-list__item"]}></li>
       </ul>
-      <p className={copyright}>© All rights reserved</p>
+      <div className={styles["text-wrapper"]}>
+        <div className={styles["designed"] + " " + styles["footer__item"]}>
+          <p>Designed by Dexola - 2023</p>
+        </div>
+        <div className={styles["copyright"] + " " + styles["footer__item"]}>
+          <p>© All rights reserved</p>
+        </div>
+      </div>
     </footer>
   );
 };

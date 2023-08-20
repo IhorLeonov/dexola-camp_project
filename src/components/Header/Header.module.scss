@@ -1,6 +1,17 @@
 .header {
   display: flex;
 
+  padding-left: 24px;
+  padding-right: 16px;
+
+  @media screen and (min-width: 744px) {
+    padding-right: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
   &__btn {
     margin-left: auto;
   }

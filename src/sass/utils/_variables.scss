@@ -1,24 +1,35 @@
 :root {
-  --background-color: #060412;
-  --border-color: #204ffe;
-  --text-main-color: #ffffff;
-  --text-desc-color: #b3b3b3;
-  --button-def-bg: #2f2f2f;
-  --table-bg-color: #09123b;
-  --table-bg-accent-color: #080b27;
-  --icons-color: #ffffff;
-  --input-def-text-color: #b3b3b3;
-  --input-typed-text-color: #ffffff;
-  --input-bd-color: #ffffff;
-  --input-hover-bd-color: #204ffe;
-  --input-warn-bd-color: #eb3795;
-  --input-icons-color: #eb3795;
-
+  // colors
+  --color-background: #060412;
+  --color-border: #204ffe;
+  --color-text-main: #ffffff;
+  --color-text-desc: #b3b3b3;
+  --color-button-def-bg: #2f2f2f;
+  --color-table-bg: #09123b;
+  --color-table-bg-accent: #080b27;
+  --color-icons: #ffffff;
+  --color-input-def-text: #b3b3b3;
+  --color-input-typed-text: #ffffff;
+  --color-input-bd: #ffffff;
+  --color-input-hover-br: #204ffe;
+  --color-input-warn-br: #eb3795;
+  --color-input-icons: #eb3795;
+  // fonts
+  --font-family--kanit-regular: "Kanit Regular", sans-serif;
+  --font-family--kanit-medium: "Kanit Medium", sans-serif;
+  --font-family--roboto-mono: "Roboto Mono", monospace;
+  --font-size--main-title-web: 340px;
+  --font-size--main-title-tab: 280px;
+  --font-size--main-title-mob: 120px;
+  --font-size--title-web: 140px;
+  --font-size--title-tab: 112px;
+  --font-size--title-mob: 48px;
+  --font-size--subtitle-web: 24px;
+  --font-size--subtitle-tab: 20px;
+  --font-size--subtitle-mob: 18px;
+  --font-size--body-web: 18px;
+  --font-size--body-tab: 16px;
+  --font-size--body-mob: 14px;
+  // motions
   --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-// breakpoints:
-$mobile: 480px;
-$tablet: 768px;
-$desktop: 1200px;
-$qwe: 2px;

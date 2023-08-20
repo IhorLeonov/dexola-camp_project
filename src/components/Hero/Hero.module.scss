@@ -1,1 +1,45 @@
+.hero {
+  padding-left: 16px;
+  padding-right: 16px;
 
+  @media screen and (min-width: 394px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (min-width: 745px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  &-title {
+    font-family: var(--font-family--kanit-medium);
+    font-size: var(--font-size--main-title-mob);
+    overflow: hidden;
+
+    @media screen and (min-width: 394px) {
+      font-size: var(--font-size--main-title-tab);
+    }
+
+    @media screen and (min-width: 745px) {
+      font-size: var(--font-size--main-title-web);
+    }
+  }
+
+  &-image__box {
+    display: flex;
+    width: 361px;
+
+    border: 1px solid var(--border-color);
+  }
+
+  &-image {
+    width: 181px;
+    height: 311px;
+
+    overflow: hidden;
+    &:nth-child(2) {
+      border-left: 1px solid var(--border-color);
+    }
+  }
+}

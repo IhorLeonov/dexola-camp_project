@@ -1,10 +1,9 @@
-// import styles from "./Features.module.scss";
+import styles from "./Features.module.scss";
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 
 export const Features = () => {
   return (
-    <section className="container">
-      {/* <div className="container"> */}
+    <section className={"container" + " " + styles["features"]}>
       <SectionTitle text="Features" numb="01" />
 
       <div className="about">
@@ -55,7 +54,6 @@ export const Features = () => {
           <button>DISCOVER NOW</button>
         </li>
       </ul>
-      {/* </div> */}
     </section>
   );
 };
