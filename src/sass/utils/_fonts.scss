@@ -1,5 +1,5 @@
-$roboto-font-path: "src/assets/fonts/Roboto_Mono";
-$kanit-font-path: "src/assets/fonts/Kanit";
+$roboto-font-path: "../src/assets/fonts/Roboto_Mono";
+$kanit-font-path: "../src/assets/fonts/Kanit";
 
 @font-face {
   src: url($roboto-font-path + "/RobotoMono-Regular.ttf") format("truetype");
