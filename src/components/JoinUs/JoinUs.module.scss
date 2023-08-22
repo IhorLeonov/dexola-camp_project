@@ -20,4 +20,26 @@
       letter-spacing: 0.48px !important;
     }
   }
+
+  &-btn {
+    @include button;
+
+    @media screen and (max-width: 743px) {
+      text-transform: uppercase;
+      width: 294.5px; // 100%
+    }
+
+    &::before {
+      content: "";
+      background-color: var(--color-text-main);
+      width: 22.6px;
+      height: 1.5px;
+      margin-right: 10.5px;
+
+      @media screen and (min-width: 744px) {
+        margin-right: 11.2px;
+        width: 24px;
+      }
+    }
+  }
 }

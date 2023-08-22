@@ -17,6 +17,7 @@ export const JoinUs = () => {
           </p>
         </div>
         <form action=""></form>
+        <button className={styles["join-btn"]}>Send it</button>
       </div>
     </section>
   );

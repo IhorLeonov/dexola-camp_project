@@ -1,31 +1,31 @@
-import s from "./Footer.module.scss";
-import { IconSelector } from "../../helpers/IconSelector";
+import styles from "./Footer.module.scss";
+import { Icon } from "../IconSelector/IconSelector";
 
 export const Footer = () => {
   return (
     <footer
-      className={"container" + " " + s["footer"]}
+      className={"container" + " " + styles["footer"]}
       style={{ paddingLeft: 0, paddingRight: 0 }}
     >
-      <ul className={s["socials-list"] + " " + s["footer__item"]}>
-        <li className={s["socials-list__item"]}>
-          <IconSelector id="facebook" />
+      <ul className={styles["socials-list"] + " " + styles["footer__item"]}>
+        <li className={styles["socials-list__item"]}>
+          <Icon id="facebook" />
         </li>
-        <li className={s["socials-list__item"]}>
-          <IconSelector id="instagram" />
+        <li className={styles["socials-list__item"]}>
+          <Icon id="instagram" />
         </li>
-        <li className={s["socials-list__item"]}>
-          <IconSelector id="discord" />
+        <li className={styles["socials-list__item"]}>
+          <Icon id="discord" />
         </li>
-        <li className={s["socials-list__item"]}>
-          <IconSelector id="telegram" />
+        <li className={styles["socials-list__item"]}>
+          <Icon id="telegram" />
         </li>
       </ul>
-      <div className={s["text-wrapper"]}>
-        <div className={s["designed"] + " " + s["footer__item"]}>
+      <div className={styles["text-wrapper"]}>
+        <div className={styles["designed"] + " " + styles["footer__item"]}>
           <p>Designed by Dexola - 2023</p>
         </div>
-        <div className={s["copyright"] + " " + s["footer__item"]}>
+        <div className={styles["copyright"] + " " + styles["footer__item"]}>
           <p>© All rights reserved</p>
         </div>
       </div>

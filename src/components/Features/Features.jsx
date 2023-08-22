@@ -1,5 +1,6 @@
 import styles from "./Features.module.scss";
 import { Title } from "../Title/Title";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export const Features = () => {
   return (
@@ -30,7 +31,10 @@ export const Features = () => {
               The StarRunner Token the exclusive crypto currency fueling the
               adventure of the Play-to-Earn sensation.
             </p>
-            <button>DISCOVER NOW</button>
+            <button className={styles["features-btn"]}>
+              <FiArrowUpRight size={18} />
+              Discover now
+            </button>
           </li>
 
           <li className="features__item">
@@ -43,7 +47,10 @@ export const Features = () => {
               Join a thriving community of stakers, united by their passion for
               exploration, strategy, and gaming.
             </p>
-            <button>DISCOVER NOW</button>
+            <button className={styles["features-btn"]}>
+              <FiArrowUpRight size={18} />
+              Discover now
+            </button>
           </li>
 
           <li className="features__item">
@@ -56,7 +63,10 @@ export const Features = () => {
               Every StarRunner NFT tells a story – YOUR story. This NFT
               encapsulates the essence of your journey like never before.
             </p>
-            <button>DISCOVER NOW</button>
+            <button className={styles["features-btn"]}>
+              <FiArrowUpRight size={18} />
+              Discover now
+            </button>
           </li>
         </ul>
       </div>

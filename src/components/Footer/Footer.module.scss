@@ -23,7 +23,8 @@
     width: 32px;
     height: 32px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       svg {
         fill: var(--color-accent);
       }

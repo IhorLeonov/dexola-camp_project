@@ -26,3 +26,21 @@
     padding-bottom: 65px;
   }
 }
+
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 235px;
+  height: 48px;
+
+  color: var(--color-text-main);
+  font-family: var(--font-family--roboto-mono);
+  background-color: var(--color-button-default);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.32px;
+}
