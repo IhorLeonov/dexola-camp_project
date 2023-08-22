@@ -1,11 +1,11 @@
 import styles from "./TopNfts.module.scss";
-import { SectionTitle } from "../SectionTitle/SectionTitle";
+import { Title } from "../Title/Title";
 
 export const TopNfts = () => {
   return (
-    <section className={"container" + " " + styles["top"]}>
-      <SectionTitle text="Top NFTs" numb="02" />
-      <div className="table"></div>
+    <section>
+      <Title text="Top NFTs" numb="02" />
+      <div className={styles["top"]}></div>
     </section>
   );
 };

@@ -3,7 +3,7 @@ import styles from "./Footer.module.scss";
 export const Footer = () => {
   return (
     <footer
-      className={styles["footer"]}
+      className={"container" + " " + styles["footer"]}
       style={{ paddingLeft: 0, paddingRight: 0 }}
     >
       <ul className={styles["socials-list"] + " " + styles["footer__item"]}>

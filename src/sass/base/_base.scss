@@ -7,58 +7,35 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  color: var(--color-text-main); //////////
-  background-color: var(--color-background); /////////
-  font-family: var(--font-family--roboto-mono);
-  font-size: var(--font-size--body-mob);
-
-  @media screen and (min-width: 394px) {
-    font-size: var(--font-size--body-tab);
-  }
-  @media screen and (min-width: 745px) {
-    font-size: var(--font-size--body-web);
-  }
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+body {
+  color: var(--color-text-main);
+  background-color: var(--color-background);
+  font-family: var(--font-family--roboto-mono);
+  font-size: var(--font-size--body-mob);
+
+  @media screen and (min-width: 744px) {
+    font-size: var(--font-size--body-tab);
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: var(--font-size--body-web);
+  }
+}
+
 p {
-  margin: 0;
-}
+  color: var(--color-text-desc);
+  letter-spacing: -0.28px;
+  font-weight: 400;
 
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
+  @media screen and (min-width: 744px) {
+    letter-spacing: -0.32px;
+  }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-  cursor: pointer;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
+  @media screen and (min-width: 1440px) {
+    letter-spacing: -0.36px;
+  }
 }

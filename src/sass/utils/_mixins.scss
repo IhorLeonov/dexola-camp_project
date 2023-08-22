@@ -1,25 +1,28 @@
-@mixin section($pl: 24px, $pr: 24px) {
-  padding-left: $pl;
-  padding-right: $pr;
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  max-width: 1440px;
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
-// @mixin for-phone-up {
-//   @media (max-width: 767px) {
-//     @content;
-//   }
-// }
-// @mixin for-tablet-up-min {
-//   @media (min-width: 768px) {
-//     @content;
-//   }
-// }
-// @mixin for-tablet-up {
-//   @media (min-width: 768px) and (max-width: 1199px) {
-//     @content;
-//   }
-// }
-// @mixin for-desktop {
-//   @media (min-width: 1200px) {
-//     @content;
-//   }
-// }
+@mixin section {
+  padding-top: 32px;
+  padding-bottom: 88px;
+
+  @media screen and (min-width: 744px) {
+    padding-top: 56px;
+    padding-bottom: 90px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 90px;
+    padding-bottom: 65px;
+  }
+}

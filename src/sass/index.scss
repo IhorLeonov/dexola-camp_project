@@ -1,8 +1,6 @@
 @use "normalize.css";
 @use "./utils/fonts";
 @use "./utils/variables";
-@use "./utils/placeholders";
-@use "./utils/mixins";
-@use "./utils/visually-hidden";
+@use "./utils/reset";
 @use "./base/base";
-@use "./base/container";
+@use "./base/common";

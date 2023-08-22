@@ -1,19 +1,17 @@
 :root {
   // colors
   --color-background: #060412;
-  --color-border: #204ffe;
   --color-text-main: #ffffff;
   --color-text-desc: #b3b3b3;
-  --color-button-def-bg: #2f2f2f;
-  --color-table-bg: #09123b;
-  --color-table-bg-accent: #080b27;
-  --color-icons: #ffffff;
-  --color-input-def-text: #b3b3b3;
-  --color-input-typed-text: #ffffff;
-  --color-input-bd: #ffffff;
-  --color-input-hover-br: #204ffe;
-  --color-input-warn-br: #eb3795;
-  --color-input-icons: #eb3795;
+  --color-button-background-def: #2f2f2f;
+  --color-table-background: #09123b;
+  --color-table-background-accent: #080b27;
+  --color-icons-default: #ffffff;
+  --color-input-text-def: #b3b3b3;
+  --color-input-text-typed: #ffffff;
+  --color-border-default: #ffffff;
+  --color-border-accent: #204ffe;
+  --color-border-warning: #eb3795;
   // fonts
   --font-family--kanit-regular: "Kanit Regular", sans-serif;
   --font-family--kanit-medium: "Kanit Medium", sans-serif;
@@ -26,7 +24,7 @@
   --font-size--title-mob: 48px;
   --font-size--subtitle-web: 24px;
   --font-size--subtitle-tab: 20px;
-  --font-size--subtitle-mob: 18px;
+  --font-size--subtitle-mob: 16px;
   --font-size--body-web: 18px;
   --font-size--body-tab: 16px;
   --font-size--body-mob: 14px;

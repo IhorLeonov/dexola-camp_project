@@ -1,12 +1,26 @@
+@import "../../sass//utils/mixins";
+
 .features {
-  padding-left: 24px;
-  padding-right: 24px;
+  @include container;
+  @include section;
 
-  @media screen and (min-width: 744px) {
-  }
+  //   &__about {
+  //     &-title {
+  //       @media screen and (min-width: 1440px) {
+  //       }
+  //     }
+  //   }
 
-  @media screen and (min-width: 1440px) {
-    padding-left: 120px;
-    padding-right: 120px;
+  &__item {
+    &-title {
+      :first-child {
+        margin-right: 16px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        line-height: 1.4 !important;
+        letter-spacing: normal !important;
+      }
+    }
   }
 }

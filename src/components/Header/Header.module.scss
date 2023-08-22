@@ -1,18 +1,24 @@
 .header {
-  display: flex;
+  position: fixed;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 24px;
-  padding-right: 16px;
+  padding-right: 24px;
+
+  height: 48px;
+  width: 100%;
+  max-width: 1440px;
 
   @media screen and (min-width: 744px) {
-    padding-right: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 78px;
   }
   @media screen and (min-width: 1440px) {
+    left: calc((100vw - 1440px) / 2);
     padding-left: 120px;
     padding-right: 120px;
-  }
-
-  &__btn {
-    margin-left: auto;
   }
 }
