@@ -4,6 +4,7 @@
 
   padding-left: 24px;
   padding-right: 24px;
+
   max-width: 1440px;
 
   @media screen and (min-width: 1440px) {
@@ -13,8 +14,8 @@
 }
 
 @mixin section {
-  padding-top: 32px;
-  padding-bottom: 88px;
+  padding-top: 65px;
+  padding-bottom: 24px;
 
   @media screen and (min-width: 744px) {
     padding-top: 56px;
@@ -22,7 +23,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    padding-top: 90px;
+    padding-top: 126px;
     padding-bottom: 65px;
   }
 }
@@ -43,4 +44,10 @@
   font-weight: 500;
   line-height: 1.7;
   letter-spacing: 0.32px;
+  transition: background-color var(--main-animation);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(39, 42, 46, 0.9);
+  }
 }

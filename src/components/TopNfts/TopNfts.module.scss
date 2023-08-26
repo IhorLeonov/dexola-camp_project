@@ -2,9 +2,13 @@
 
 .top {
   @include container;
-  @include section;
 
-  @media screen and (min-width: 1440px) {
-    padding-bottom: 130px;
+  &-section {
+    @include section;
+
+    @media screen and (min-width: 744px) {
+      padding-top: 90px;
+      padding-bottom: 0;
+    }
   }
 }

@@ -1,35 +1,33 @@
+@import "../../sass/utils/mixins";
+
 .hero {
-  padding-top: 57px;
-  padding-bottom: 127px;
-
-  @media screen and (min-width: 744px) {
-    padding-top: 87px;
-    padding-bottom: 33px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    padding-top: 78px;
-    padding-bottom: 16px;
-  }
-
-  &-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 24px;
-    max-width: 1440px;
+  &_section {
+    padding-top: 66px;
+    padding-bottom: 127px;
 
     @media screen and (min-width: 744px) {
-      padding-right: 24px;
+      padding-top: 87px;
+      padding-bottom: 0px;
     }
 
     @media screen and (min-width: 1440px) {
-      padding-left: 120px;
-      padding-right: 120px;
+      padding-top: 79px;
+      padding-bottom: 16px;
     }
   }
 
-  &__title {
-    margin-top: 16px;
+  &_container {
+    @include container;
+
+    @media screen and (min-width: 1440px) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &_title {
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
 
     font-family: var(--font-family--kanit-medium);
@@ -38,34 +36,77 @@
     font-weight: 500;
     text-transform: uppercase;
 
+    @media screen and (max-width: 743px) {
+      margin-top: 16px;
+    }
+
     @media screen and (min-width: 744px) {
       font-size: var(--font-size--main-title-tab);
     }
 
     @media screen and (min-width: 1440px) {
+      width: 100%;
       font-size: var(--font-size--main-title-web);
+      border-top: 1px solid var(--color-accent);
     }
   }
 
-  &__img-box {
-    display: flex;
-    margin-left: auto;
-    max-width: 351px;
+  &__wrapper {
+    @media screen and (min-width: 1440px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-    border: 1px solid var(--color-accent);
+      border-top: 1px solid var(--color-accent);
+    }
   }
 
-  &__image {
-    width: 181px;
-    height: 311px;
+  &__img_box {
+    display: flex;
+  }
 
-    overflow: hidden;
-    &:nth-child(2) {
+  &_image {
+    width: 163.5px;
+    height: 311px;
+    border-right: 1px solid var(--color-accent);
+
+    &:nth-child(1) {
       border-left: 1px solid var(--color-accent);
     }
+
+    @media screen and (max-width: 1439px) {
+      border-top: 1px solid var(--color-accent);
+      border-bottom: 1px solid var(--color-accent);
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 233px;
+    }
   }
 
-  &__description {
+  &_description {
     color: var(--color-text-main);
+
+    @media screen and (min-width: 1440px) {
+      width: 640px;
+      height: 96px;
+    }
+
+    &__box {
+      margin-top: 15px;
+
+      @media screen and (min-width: 744px) {
+        margin-top: 13px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        order: -1;
+
+        padding-top: 159px;
+        padding-left: 24px;
+        padding-right: 70px;
+        margin-top: 0;
+      }
+    }
   }
 }

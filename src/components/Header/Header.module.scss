@@ -2,32 +2,37 @@
 
 .header {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 4px;
-  padding-bottom: 13px;
-  padding-left: 24px;
-  padding-right: 24px;
-
   width: 100%;
-  max-width: 1440px;
 
   background-color: var(--color-background);
 
-  @media screen and (min-width: 744px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media screen and (min-width: 1440px) {
-    left: calc((100vw - 1440px) / 2);
-    padding-left: 120px;
-    padding-right: 120px;
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    max-width: 1440px;
+
+    @media screen and (min-width: 744px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      left: calc((100vw - 1440px) / 2);
+      padding-left: 120px;
+      padding-right: 120px;
+    }
   }
 
-  &-btn {
+  &_btn {
     @include button;
     gap: 6.5px;
 

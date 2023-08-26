@@ -2,26 +2,30 @@
 
 .join {
   @include container;
-  @include section;
 
-  padding-top: 27px;
+  &_section {
+    padding-top: 65px;
+    padding-bottom: 72px;
+  }
 
   @media screen and (min-width: 744px) {
+    padding-top: 90px;
     padding-bottom: 76px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding-bottom: 113px;
+    padding-top: 126px;
+    padding-bottom: 125px;
   }
 
-  &__title {
+  &_title {
     @media screen and (min-width: 1440px) {
       line-height: 1.33 !important;
       letter-spacing: 0.48px !important;
     }
   }
 
-  &-btn {
+  &_btn {
     @include button;
 
     @media screen and (max-width: 743px) {

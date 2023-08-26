@@ -2,10 +2,88 @@
 
 .features {
   @include container;
-  @include section;
 
-  &__item {
-    &-title {
+  padding-top: 32px;
+
+  @media screen and (min-width: 744px) {
+    padding-top: 56px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 96px;
+  }
+
+  &-section {
+    padding-top: 21px;
+
+    @media screen and (min-width: 744px) {
+      padding-top: 148px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding-top: 126px;
+      padding-bottom: 65px;
+    }
+  }
+
+  &_about {
+    @media screen and (min-width: 744px) {
+      display: flex;
+    }
+
+    &_title {
+      min-width: 221px;
+      margin-right: 15px;
+
+      @media screen and (min-width: 1440px) {
+        min-width: 189px;
+        margin-right: 24px;
+        margin-left: 187px;
+      }
+    }
+
+    &_desc {
+      margin-top: 12px;
+
+      @media screen and (min-width: 744px) {
+        margin-top: 0;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 601px;
+      }
+    }
+  }
+
+  &_list {
+    margin-top: 20px;
+
+    @media screen and (min-width: 744px) {
+      display: flex;
+      margin-top: 40px;
+      gap: 17px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-top: 90px;
+      gap: 40px;
+    }
+  }
+
+  &_item {
+    border: 1px solid var(--color-accent);
+    margin-top: 16px;
+
+    :first-child {
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 744px) {
+      margin-top: 0;
+      width: calc(100vw);
+    }
+
+    &_title {
       :first-child {
         margin-right: 16px;
       }
@@ -15,24 +93,60 @@
         letter-spacing: normal !important;
       }
     }
+
+    &_info {
+      padding-top: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 24px;
+
+      @media screen and (min-width: 1440px) {
+        padding: 24px;
+      }
+    }
+
+    &_desc {
+      padding-top: 16px;
+      height: 147px;
+    }
   }
 
-  &-btn {
+  &_img {
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &_box {
+      // display: flex;
+      // justify-content: center;
+
+      // width: 100%;
+      // height: auto;
+    }
+  }
+
+  &_btn {
     @include button;
-    width: 297px; // 100%
+    width: 100%; // 297px
     gap: 6px;
+    margin-top: 24px;
 
     font-size: 16px;
     letter-spacing: 0.32px;
     text-transform: uppercase;
 
     @media screen and (min-width: 744px) {
+      margin-top: 16px;
       gap: 7px;
-      width: 195px; // 100%
+      // width: 195px; // 100%
     }
     @media screen and (min-width: 1440px) {
       gap: 6.2px;
-      width: 309px; // 100%
+      // width: 309px; // 100%
     }
   }
 }
