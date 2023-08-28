@@ -5,7 +5,7 @@ import astr1tab2x from "../../assets/images/features/astronaut-1_tab-@2x.jpg";
 import astr1desc1x from "../../assets/images/features/astronaut-1_desc-@1x.jpg";
 import astr1desc2x from "../../assets/images/features/astronaut-1_desc-@2x.jpg";
 
-// import astr1tab2x from "../../assets/images/img.jpg";
+import astr1tab2xt from "../../assets/images/img.jpg";
 
 import astr2mob1x from "../../assets/images/features/astronaut-2_mob-@1x.jpg";
 import astr2mob2x from "../../assets/images/features/astronaut-2_mob-@2x.jpg";
@@ -14,7 +14,7 @@ import astr2tab2x from "../../assets/images/features/astronaut-2_tab-@2x.jpg";
 import astr2desc1x from "../../assets/images/features/astronaut-2_desc-@1x.jpg";
 import astr2desc2x from "../../assets/images/features/astronaut-2_desc-@2x.jpg";
 
-// import astr2tab2x from "../../assets/images/img.jpg";
+import astr2tab2xt from "../../assets/images/img.jpg";
 
 import astr3mob1x from "../../assets/images/features/astronaut-3_mob-@1x.jpg";
 import astr3mob2x from "../../assets/images/features/astronaut-3_mob-@2x.jpg";
@@ -23,7 +23,7 @@ import astr3tab2x from "../../assets/images/features/astronaut-3_tab-@2x.jpg";
 import astr3desc1x from "../../assets/images/features/astronaut-3_desc-@1x.jpg";
 import astr3desc2x from "../../assets/images/features/astronaut-3_desc-@2x.jpg";
 
-// import astr3tab2x from "../../assets/images/img.jpg";
+import astr3tab2xt from "../../assets/images/img.jpg";
 
 export const imgUrls = {
   astr1mob1x,
@@ -44,4 +44,7 @@ export const imgUrls = {
   astr3tab2x,
   astr3desc1x,
   astr3desc2x,
+  astr1tab2xt,
+  astr2tab2xt,
+  astr3tab2xt,
 };

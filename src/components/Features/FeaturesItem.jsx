@@ -7,7 +7,7 @@ export const FeaturesItem = ({ id, title, body }) => {
 
   return (
     <li className={styles.features_item}>
-      <div className={styles.features_img_box}>
+      <div className={styles.features_image_container}>
         <FeaturesImage id={id} />
       </div>
       <div className={styles.features_item_info}>

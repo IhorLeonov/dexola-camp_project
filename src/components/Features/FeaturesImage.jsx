@@ -3,7 +3,7 @@ import { imgUrls } from "./ImagesPath";
 
 export const FeaturesImage = ({ id }) => {
   return (
-    <picture className={styles.features_img}>
+    <picture className={styles.features_picture}>
       <source
         media="(min-width: 1440px)"
         srcSet={`${imgUrls[`astr${id}desc1x`]} 1x, ${
