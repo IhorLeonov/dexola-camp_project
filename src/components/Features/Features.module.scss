@@ -13,7 +13,7 @@
     padding-top: 96px;
   }
 
-  &-section {
+  &_section {
     padding-top: 21px;
 
     @media screen and (min-width: 744px) {
@@ -84,7 +84,7 @@
     }
 
     &_title {
-      @media screen and (min-width: 744px) and (max-width: 1439px) {
+      @media screen and (min-width: 744px) and (max-width: 900px) {
         span {
           display: block;
         }

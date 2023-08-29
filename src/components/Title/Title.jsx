@@ -1,10 +1,10 @@
 import styles from "./Title.module.scss";
 
-export const Title = ({ text, numb }) => {
+export const Title = ({ name, numb }) => {
   return (
     <>
       <h2 className={styles.title}>
-        <span>{text}</span>
+        <span>{name}</span>
         <span>{numb}</span>
       </h2>
       <hr className={styles.title_underline} />

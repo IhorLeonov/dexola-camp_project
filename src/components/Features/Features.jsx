@@ -5,14 +5,12 @@ import { FeaturesList } from "./FeatyresList";
 export const Features = () => {
   return (
     <section className={styles.features_section}>
-      <Title text="Features" numb="01" />
+      <Title name="Features" numb="01" />
       <div className={styles.features}>
         <div className={styles.features_about}>
-          {/* <div className="features_about_title_box"> */}
           <h3 className={"sub-title" + " " + styles.features_about_title}>
             About StarRunner
           </h3>
-          {/* </div> */}
           <p className={styles.features_about_desc}>
             The StarRunner Blockchain Ecosystem isn&apos;t a mere playground;
             it&apos;s a living, evolving entity that adapts to the desires and

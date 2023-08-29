@@ -34,3 +34,12 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+input {
+  display: block;
+  padding: 0;
+  width: 100%;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+}

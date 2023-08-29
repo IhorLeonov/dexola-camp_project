@@ -1,5 +1,5 @@
 import styles from "./Features.module.scss";
-import { imgUrls } from "./ImagesPath";
+import { imgUrls } from "./imagesPath";
 
 export const FeaturesImage = ({ id }) => {
   return (

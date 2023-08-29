@@ -10,5 +10,9 @@
       padding-top: 90px;
       padding-bottom: 0;
     }
+
+    @media screen and (min-width: 744px) {
+      padding-top: 126px;
+    }
   }
 }

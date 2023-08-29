@@ -1,4 +1,4 @@
-import data from "../../helpers/features.json";
+import data from "./features.json";
 import styles from "./Features.module.scss";
 import { FeaturesItem } from "./FeaturesItem";
 
