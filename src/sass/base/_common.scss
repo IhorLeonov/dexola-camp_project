@@ -14,3 +14,11 @@
     letter-spacing: -0.48px;
   }
 }
+
+.invalid_input {
+  border-color: var(--color-warning) !important;
+}
+
+.typed_input {
+  border-color: var(--color-accent);
+}

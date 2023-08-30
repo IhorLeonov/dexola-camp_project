@@ -7,9 +7,7 @@ export const FeaturesItem = ({ id, title, body }) => {
 
   return (
     <li className={styles.features_item}>
-      <div className={styles.features_image_container}>
-        <FeaturesImage id={id} />
-      </div>
+      <FeaturesImage id={id} />
       <div className={styles.features_item_info}>
         <h4 className={"sub-title" + " " + styles.features_item_title}>
           <span>{titleNumb}</span>

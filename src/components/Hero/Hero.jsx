@@ -10,13 +10,11 @@ export const Hero = () => {
           <img
             className={styles.hero_image}
             src={firstImage}
-            loading="lazy"
             alt="First NFT picture"
           />
           <img
             className={styles.hero_image}
             src={secondImage}
-            loading="lazy"
             alt="Second NFT picture"
           />
         </div>
