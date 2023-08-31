@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import { FiArrowUpRight } from "react-icons/fi";
+import arrowIcon from "../../assets/icons/arrow-up-right.svg";
 import { Icon } from "../../helpers/IconSelector";
 
 export const Header = () => {
@@ -9,9 +9,8 @@ export const Header = () => {
         <div className="logo">
           <Icon id="logo" />
         </div>
-
         <button className={styles.header_btn} type="button">
-          <FiArrowUpRight size={18} />
+          <img src={arrowIcon} alt="Arrow" />
           Join Now
         </button>
       </div>

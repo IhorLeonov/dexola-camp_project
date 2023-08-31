@@ -1,15 +1,16 @@
 .footer {
-  padding-bottom: 34px;
   border-top: 1px solid var(--color-accent);
-
-  @media screen and (min-width: 744px) {
-    padding-bottom: 0;
-  }
 
   &_container {
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
+    height: 134px;
+
+    @media screen and (min-width: 744px) {
+      display: flex;
+      height: 100px;
+    }
   }
 
   &_item {
@@ -17,39 +18,74 @@
     margin-right: auto;
     width: 100%;
   }
-}
 
-.socials_list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+  &_socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    height: 56px;
 
-  &__item {
-    width: 32px;
-    height: 32px;
+    @media screen and (min-width: 744px) {
+      gap: 24px;
+      flex-basis: 50%;
+      height: 100%;
+    }
 
-    &:hover,
-    &:focus {
-      svg {
-        fill: var(--color-accent);
+    @media screen and (min-width: 1440px) {
+      gap: 40px;
+      border-left: 1px solid var(--color-accent);
+      border-right: 1px solid var(--color-accent);
+      flex-basis: 33.33%;
+      margin-left: 0;
+    }
+
+    &_item {
+      width: 32px;
+      height: 32px;
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: var(--color-accent);
+        }
       }
     }
   }
-}
 
-.text_wrapper {
-  margin-top: 8px;
-}
+  &_company_info {
+    position: relative;
+    padding-top: 8px;
+    text-align: center;
 
-.designed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    @media screen and (min-width: 744px) {
+      display: flex;
+      flex-basis: 50%;
+      order: -1;
+      flex-wrap: wrap;
+      gap: 2px;
+      padding-top: 0px;
+    }
 
-.copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    @media screen and (min-width: 1440px) {
+      flex-basis: 33.33%;
+    }
+  }
+
+  &_designed {
+    align-self: flex-end;
+    @media screen and (min-width: 1440px) {
+      align-self: center;
+    }
+  }
+
+  &_copyright {
+    @media screen and (min-width: 1440px) {
+      position: absolute;
+      display: flex;
+      left: 1100px;
+      top: 38px;
+      width: 270px;
+    }
+  }
 }

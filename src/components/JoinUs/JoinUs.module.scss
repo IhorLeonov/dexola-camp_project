@@ -87,6 +87,7 @@
 
     :nth-child(4) .join_form_marker {
       top: 285px;
+
       @media screen and (min-width: 744px) {
         top: 315px;
       }
@@ -94,6 +95,10 @@
 
     :nth-child(4) .join_form_password_btn {
       top: 284px;
+
+      @media screen and (min-width: 744px) {
+        top: 314px;
+      }
     }
 
     @media screen and (min-width: 744px) {

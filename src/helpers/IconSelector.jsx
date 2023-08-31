@@ -1,5 +1,4 @@
 // svg-sprite method.
-
 import sprite from "../assets/icons/sprite.svg";
 
 export const Icon = ({ id }) => {
