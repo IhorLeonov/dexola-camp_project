@@ -1,49 +1,48 @@
 // svg-sprite method.
 
-import sprite from "../../assets/icons/sprite.svg";
-import styles from "./IconSelector.module.scss";
+import sprite from "../assets/icons/sprite.svg";
 
 export const Icon = ({ id }) => {
   switch (id) {
     case "logo":
       return (
-        <svg className={styles.svg} width={34.5} height={19.5}>
+        <svg className="svg" width={34.5} height={19.5}>
           <use href={sprite + "#logo"}></use>
         </svg>
       );
     case "discord":
       return (
-        <svg className={styles.svg} width={32} height={32}>
+        <svg className="svg" width={32} height={32}>
           <use href={sprite + "#discord"}></use>
         </svg>
       );
     case "facebook":
       return (
-        <svg className={styles.svg} width={32} height={32}>
+        <svg className="svg" width={32} height={32}>
           <use href={sprite + "#facebook"}></use>
         </svg>
       );
     case "instagram":
       return (
-        <svg className={styles.svg} width={32} height={32}>
+        <svg className="svg" width={32} height={32}>
           <use href={sprite + "#instagram"}></use>
         </svg>
       );
     case "telegram":
       return (
-        <svg className={styles.svg} width={32} height={32}>
+        <svg className="svg" width={32} height={32}>
           <use href={sprite + "#telegram"}></use>
         </svg>
       );
     case "eye-close":
       return (
-        <svg className={styles.svg} width={24} height={24}>
+        <svg className="svg" width={24} height={24}>
           <use href={sprite + "#eye-close"}></use>
         </svg>
       );
     case "eye-open":
       return (
-        <svg className={styles.svg} width={24} height={24}>
+        <svg className="svg" width={24} height={24}>
           <use href={sprite + "#eye-open"}></use>
         </svg>
       );

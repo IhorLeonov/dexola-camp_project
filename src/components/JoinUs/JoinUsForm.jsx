@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { Form, Field as Input } from "formik";
 import * as Yup from "yup";
 
-import { Icon } from "../IconSelector/IconSelector";
+import { Icon } from "../../helpers/IconSelector";
 import flagIcon from "../../assets/icons/flag-ukr.svg";
 import { useState } from "react";
 

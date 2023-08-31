@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 import { FiArrowUpRight } from "react-icons/fi";
-import { Icon } from "../IconSelector/IconSelector";
+import { Icon } from "../../helpers/IconSelector";
 
 export const Header = () => {
   return (

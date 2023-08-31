@@ -1,5 +1,5 @@
 import styles from "./Footer.module.scss";
-import { Icon } from "../IconSelector/IconSelector";
+import { Icon } from "../../helpers/IconSelector";
 
 export const Footer = () => {
   return (
