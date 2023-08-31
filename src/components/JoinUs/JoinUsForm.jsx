@@ -1,9 +1,11 @@
 import s from "./JoinUs.module.scss";
-import flagIcon from "../../assets/icons/flag-ukr.svg";
 import { Formik } from "formik";
 import { Form, Field as Input } from "formik";
 import * as Yup from "yup";
-// import { useState } from "react";
+
+import { Icon } from "../IconSelector/IconSelector";
+import flagIcon from "../../assets/icons/flag-ukr.svg";
+import { useState } from "react";
 
 const required = "Please complete this field.";
 const schema = Yup.object().shape({
@@ -33,6 +35,9 @@ export const JoinUsForm = () => {
     });
   };
 
+  const [showPass, setShowPass] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
+
   return (
     <Formik
       initialValues={{ email: "", phone: "", password: "", confirmPass: "" }}
@@ -45,22 +50,21 @@ export const JoinUsForm = () => {
       }}
     >
       {({ touched, errors }) => {
-        // adding label invalid class function
-        const invalidInput = (inputName) => {
-          const checkError = touched[inputName] && errors[inputName];
-          return checkError ? "invalid_input" : "";
+        // adding warning styles
+        const warningInput = (inputName) => {
+          return touched[inputName] && errors[inputName]
+            ? " warning_input"
+            : "";
         };
         // check error existence
-        const emailError = touched.email && errors.email;
-        const phoneError = touched.phone && errors.phone;
-        const passwordError = touched.password && errors.password;
-        const confirmPassError = touched.confirmPass && errors.confirmPass;
-
+        const checkError = (inputName) => {
+          return touched[inputName] && errors[inputName];
+        };
         return (
           <Form className={s.join_form}>
             <label className={s.join_form_label}>
               <Input
-                className={s.join_form_input + " " + invalidInput("email")}
+                className={s.join_form_input + " " + warningInput("email")}
                 type="email"
                 name="email"
                 placeholder="Enter email"
@@ -68,7 +72,7 @@ export const JoinUsForm = () => {
               />
               <span className={s.join_form_marker}>*</span>
               <div className={s.join_form_error_box}>
-                {emailError && (
+                {checkError("email") && (
                   <p className={s.join_form_error}>{errors.email}</p>
                 )}
               </div>
@@ -76,7 +80,7 @@ export const JoinUsForm = () => {
 
             <label className={s.join_form_label}>
               <Input
-                className={s.join_form_input + " " + invalidInput("phone")}
+                className={s.join_form_input + " " + warningInput("phone")}
                 type="text"
                 name="phone"
                 placeholder="+38(0__) ___ __ __"
@@ -88,7 +92,7 @@ export const JoinUsForm = () => {
                 alt="Flag of Ukraine"
               />
               <div className={s.join_form_error_box}>
-                {phoneError && (
+                {checkError("phone") && (
                   <p className={s.join_form_error}>{errors.phone}</p>
                 )}
               </div>
@@ -96,15 +100,22 @@ export const JoinUsForm = () => {
 
             <label className={s.join_form_label}>
               <Input
-                className={s.join_form_input + " " + invalidInput("password")}
-                type="text"
+                className={s.join_form_input + " " + warningInput("password")}
+                type={showPass ? "text" : "password"}
                 name="password"
                 placeholder="Password"
                 autoComplete="off"
               />
               <span className={s.join_form_marker}>*</span>
+              <button
+                className={s.join_form_password_btn}
+                type="button"
+                onClick={() => setShowPass(!showPass)}
+              >
+                <Icon id={showPass ? "eye-open" : "eye-close"} />
+              </button>
               <div className={s.join_form_error_box}>
-                {passwordError && (
+                {checkError("password") && (
                   <p className={s.join_form_error}>{errors.password}</p>
                 )}
               </div>
@@ -113,16 +124,23 @@ export const JoinUsForm = () => {
             <label className={s.join_form_label}>
               <Input
                 className={
-                  s.join_form_input + " " + invalidInput("confirmPass")
+                  s.join_form_input + " " + warningInput("confirmPass")
                 }
-                type="text"
+                type={showConfirm ? "text" : "password"}
                 name="confirmPass"
                 placeholder="Confirm Password"
                 autoComplete="off"
               />
               <span className={s.join_form_marker}>*</span>
+              <button
+                className={s.join_form_password_btn}
+                type="button"
+                onClick={() => setShowConfirm(!showConfirm)}
+              >
+                <Icon id={showConfirm ? "eye-open" : "eye-close"} />
+              </button>
               <div className={s.join_form_error_box}>
-                {confirmPassError && (
+                {checkError("confirmPass") && (
                   <p className={s.join_form_error}>{errors.confirmPass}</p>
                 )}
               </div>

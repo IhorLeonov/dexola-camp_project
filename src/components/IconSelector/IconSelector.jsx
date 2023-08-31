@@ -35,6 +35,18 @@ export const Icon = ({ id }) => {
           <use href={sprite + "#telegram"}></use>
         </svg>
       );
+    case "eye-close":
+      return (
+        <svg className={styles.svg} width={24} height={24}>
+          <use href={sprite + "#eye-close"}></use>
+        </svg>
+      );
+    case "eye-open":
+      return (
+        <svg className={styles.svg} width={24} height={24}>
+          <use href={sprite + "#eye-open"}></use>
+        </svg>
+      );
     default:
       return;
   }
@@ -48,12 +60,9 @@ export const Icon = ({ id }) => {
 // import { ReactComponent as Facebook } from "../../assets/icons/socials/facebook.svg";
 // import { ReactComponent as Instagram } from "../../assets/icons/socials/instagram.svg";
 // import { ReactComponent as Telegram } from "../../assets/icons/socials/telegram.svg";
-// import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 
 // export const IconSelector = ({ id }) => {
 //   switch (id) {
-//     case "logo":
-//       return <Logo />;
 //     case "discord":
 //       return <Discord />;
 //     case "facebook":
