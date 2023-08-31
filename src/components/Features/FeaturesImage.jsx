@@ -1,9 +1,9 @@
-import styles from "./Features.module.scss";
+import s from "./Features.module.scss";
 import { featureImages } from "../../helpers/imagesPath";
 
 export const FeaturesImage = ({ id }) => {
   return (
-    <picture className={styles.features_picture}>
+    <picture className={s.features_picture}>
       <source
         media="(min-width: 1440px)"
         srcSet={`${featureImages[`astr${id}desc1x`]} 1x, ${

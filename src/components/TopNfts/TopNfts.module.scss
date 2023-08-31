@@ -3,7 +3,7 @@
 .top {
   @include container;
 
-  &-section {
+  &_section {
     @include section;
 
     @media screen and (min-width: 744px) {
@@ -14,5 +14,11 @@
     @media screen and (min-width: 744px) {
       padding-top: 126px;
     }
+  }
+
+  &_img {
+    width: 65px;
+    height: 65px;
+    // border-radius: 50%;
   }
 }

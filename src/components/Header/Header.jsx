@@ -9,10 +9,12 @@ export const Header = () => {
         <div className="logo">
           <Icon id="logo" />
         </div>
-        <button className={styles.header_btn} type="button">
-          <img src={arrowIcon} alt="Arrow" />
-          Join Now
-        </button>
+        <a href="#join">
+          <button className={styles.header_btn} type="button">
+            <img src={arrowIcon} alt="Arrow" />
+            Join Now
+          </button>
+        </a>
       </div>
     </header>
   );

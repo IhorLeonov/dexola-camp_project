@@ -5,7 +5,7 @@ import arrowIcon from "../../assets/icons/arrow-right-long.svg";
 
 export const JoinUs = () => {
   return (
-    <section className={s.join_section}>
+    <section id="join" className={s.join_section}>
       <Title name="Join Us" numb="03" />
       <div className={s.join}>
         <div className={s.join_wrapper}>

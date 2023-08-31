@@ -2,9 +2,8 @@ import s from "./JoinUs.module.scss";
 import { Formik } from "formik";
 import { Form, Field as Input } from "formik";
 import * as Yup from "yup";
-
-import { Icon } from "../../helpers/IconSelector";
 import flagIcon from "../../assets/icons/flag-ukr.svg";
+import { Icon } from "../../helpers/IconSelector";
 import { useState } from "react";
 
 const required = "Please complete this field.";
