@@ -1,28 +1,28 @@
-import styles from "./Hero.module.scss";
+import s from "./Hero.module.scss";
 import firstImage from "../../assets/images/test-img-1.jpg";
 import secondImage from "../../assets/images/test-img-2.jpg";
 
 export const Hero = () => {
   return (
-    <section className={styles.hero_section}>
-      <div className={styles.hero__wrapper}>
-        <div className={styles.hero__img_box + " " + styles.hero_container}>
+    <section className={s.hero_section}>
+      <div className={s.hero__wrapper}>
+        <div className={s.hero__img_box + " " + s.hero_container}>
           <img
-            className={styles.hero_image}
+            className={s.hero_image}
             src={firstImage}
             alt="First NFT picture"
           />
           <img
-            className={styles.hero_image}
+            className={s.hero_image}
             src={secondImage}
             alt="Second NFT picture"
           />
         </div>
-        <h1 className={styles.hero_title}>Dexola</h1>
-        <div
-          className={styles.hero_description__box + " " + styles.hero_container}
-        >
-          <p className={styles.hero_description}>
+        <div className={s.hero_title_wrapper}>
+          <h1 className={s.hero_title}>Dexola camp</h1>
+        </div>
+        <div className={s.hero_description__box + " " + s.hero_container}>
+          <p className={s.hero_description}>
             Prepare to be transported beyond the boundaries of traditional
             gaming with the StarRunner Ecosystem – the beating heart that drives
             the adrenaline-charged galactic P2E odyssey of
