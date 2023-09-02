@@ -1,7 +1,14 @@
 @import "../../sass//utils/mixins";
 
-.top {
+.top_nfts {
   @include container;
+
+  padding-top: 32px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 90px;
+    padding-bottom: 65px;
+  }
 
   &_section {
     @include section;
@@ -11,14 +18,191 @@
       padding-bottom: 0;
     }
 
-    @media screen and (min-width: 744px) {
+    @media screen and (min-width: 1440px) {
       padding-top: 126px;
     }
   }
 
-  &_img {
-    width: 65px;
-    height: 65px;
-    // border-radius: 50%;
+  &_grid {
+    display: grid;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+
+    &_row_wrapper {
+      display: contents;
+    }
+
+    @media screen and (min-width: 744px) {
+      grid-template-columns: 64px 240px repeat(4, auto);
+      grid-template-rows: 80px 80px;
+
+      & > div {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      & > .top_nfts_grid_rarity {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      & > .top_nfts_grid_image_box {
+        padding: 0px;
+      }
+
+      &_currency {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      grid-template-columns: 64px 449px repeat(4, auto);
+      grid-template-rows: 60px 80px;
+
+      & > .top_nfts_grid_rarity {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+
+    @media screen and (max-width: 743px) {
+      grid-template-columns: 80px repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+
+      &_void {
+        display: none;
+      }
+
+      &_name {
+        display: none;
+      }
+
+      &_rarity {
+        background-color: wheat;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+
+      &_rarity_level {
+        display: none;
+      }
+
+      &_total {
+        background-color: tomato;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+      }
+
+      &_won {
+        background-color: blueviolet;
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+      }
+
+      &_price {
+        display: none;
+      }
+
+      &_image_box {
+        grid-column: 1 / 2;
+        grid-row: 2 / 5;
+        width: 80px;
+        height: 64px;
+      }
+
+      &_name_value {
+        @include sub-title;
+
+        background-color: turquoise;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        padding-bottom: 12px;
+      }
+
+      &_rarity_value {
+        background-color: wheat;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        text-align: end;
+      }
+
+      &_total_value {
+        background-color: tomato;
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        text-align: end;
+      }
+
+      &_won_value {
+        background-color: blueviolet;
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+        text-align: end;
+      }
+
+      &_price_value {
+        @include sub-title;
+
+        background-color: turquoise;
+        text-align: end;
+        padding-bottom: 12px;
+      }
+    }
   }
+
+  // &_table {
+  //   border-collapse: collapse;
+  //   width: 100%;
+
+  //   thead {
+  //     tr {
+  //       height: 60px;
+  //     }
+
+  //     th {
+  //       @include sub-title;
+
+  //       padding: 12px 24px;
+  //       text-align: left;
+  //     }
+
+  //     th:nth-child(1) {
+  //       width: 64px;
+  //     }
+
+  //     @media screen and (min-width: 744px) and (max-width: 1239px) {
+  //       tr {
+  //         height: 80px;
+  //       }
+
+  //       th:nth-child(2) {
+  //         width: 240px;
+  //       }
+  //     }
+  //   }
+
+  //   tbody {
+  //     tr:nth-child(odd) {
+  //       background-color: var(--color-table-bg-accent);
+  //     }
+
+  //     tr {
+  //       height: 80px;
+  //     }
+
+  //     td {
+  //       padding: 0px 24px;
+  //       border-bottom: 1px solid var(--color-accent);
+
+  //       @media screen and (min-width: 744px) {
+  //         border-top: 1px solid var(--color-accent);
+  //       }
+  //     }
+  //   }
+
+  //   &_img {
+  //     border-radius: 50%;
+  //   }
+  // }
 }

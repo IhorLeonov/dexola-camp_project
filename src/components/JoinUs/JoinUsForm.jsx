@@ -55,7 +55,7 @@ export const JoinUsForm = () => {
             ? " warning_input"
             : "";
         };
-        // check error existence
+        // checking error existence
         const checkError = (inputName) => {
           return touched[inputName] && errors[inputName];
         };

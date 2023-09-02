@@ -37,6 +37,8 @@
   }
 
   &_title {
+    @include sub-title;
+
     @media screen and (min-width: 1440px) {
       line-height: 1.33 !important;
       letter-spacing: 0.48px !important;

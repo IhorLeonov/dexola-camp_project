@@ -4,11 +4,11 @@ export const TopItem = ({ name, rarity, total, won, price, avatar }) => {
   return (
     <li className={s.top_item}>
       <img className={s.top_img} src={avatar} alt="NFT picture" />
-      <p>{name}</p>
-      <p>{rarity}</p>
-      <p>{total}</p>
-      <p>{won}</p>
-      <p>{price}</p>
+      <td>{name}</td>
+      <td>{rarity}</td>
+      <td>{total}</td>
+      <td>{won}</td>
+      <td>{price}</td>
     </li>
   );
 };

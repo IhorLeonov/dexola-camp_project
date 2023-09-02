@@ -8,9 +8,7 @@ export const Features = () => {
       <Title name="Features" numb="01" />
       <div className={s.features}>
         <div className={s.features_about}>
-          <h3 className={"sub-title" + " " + s.features_about_title}>
-            About StarRunner
-          </h3>
+          <h3 className={s.features_about_title}>About StarRunner</h3>
           <p className={s.features_about_desc}>
             The StarRunner Blockchain Ecosystem isn&apos;t a mere playground;
             it&apos;s a living, evolving entity that adapts to the desires and

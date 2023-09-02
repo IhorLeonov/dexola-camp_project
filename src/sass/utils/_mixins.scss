@@ -28,6 +28,23 @@
   }
 }
 
+@mixin sub-title {
+  font-family: var(--font-family--kanit-medium);
+  font-size: var(--font-size--subtitle-mob);
+  line-height: 1.4;
+  font-weight: 500;
+
+  @media screen and (min-width: 744px) {
+    font-size: var(--font-size--subtitle-tab);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: var(--font-size--subtitle-web);
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+}
+
 @mixin button {
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@ export const FeaturesItem = ({ id, title, body }) => {
     <li className={s.features_item}>
       <FeaturesImage id={id} />
       <div className={s.features_item_info}>
-        <h4 className={"sub-title" + " " + s.features_item_title}>
+        <h4 className={s.features_item_title}>
           <span>{titleNumb}</span>
           <span>{title}</span>
         </h4>
