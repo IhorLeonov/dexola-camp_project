@@ -4,36 +4,38 @@ import { Title } from "../Title/Title";
 
 export const TopNfts = () => {
   return (
-    <section className={s.top_nfts_section}>
+    <section className={s.nfts_section}>
       <Title name="Top NFTs" numb="02" />
-      <div className={s.top_nfts}>
-        <div className={s.top_nfts_grid}>
-          <div className={s.top_nfts_grid_row_wrapper}>
-            <div className={s.top_nfts_grid_void}></div>
-            <div className={s.top_nfts_grid_name}>NFT Name</div>
-            <div className={s.top_nfts_grid_rarity}>
-              Rarity <span className={s.top_nfts_grid_rarity_level}>Level</span>
+      <div className={s.nfts}>
+        <div className={s.nfts_grid}>
+          <div className={s.nfts_grid_header}>
+            <div className={s.nfts_grid_void}></div>
+            <div className={s.nfts_grid_name}>NFT Name</div>
+            <div className={s.nfts_grid_rarity}>
+              Rarity <span className={s.nfts_grid_rarity_level}>Level</span>
             </div>
-            <div className={s.top_nfts_grid_total}>Total games</div>
-            <div className={s.top_nfts_grid_won}>Games Won</div>
-            <div className={s.top_nfts_grid_price}>Price (ETH)</div>
+            <div className={s.nfts_grid_total}>Total games</div>
+            <div className={s.nfts_grid_won}>Games Won</div>
+            <div className={s.nfts_grid_price}>Price (ETH)</div>
           </div>
-          <div className={s.top_nfts_grid_image_box}>
-            <div
-              style={{
-                borderRadius: 50,
-                width: 64,
-                height: 64,
-                backgroundColor: "pink",
-              }}
-            />
-          </div>
-          <div className={s.top_nfts_grid_name_value}>Legendary Artifact</div>
-          <div className={s.top_nfts_grid_rarity_value}>Legendary</div>
-          <div className={s.top_nfts_grid_total_value}>189</div>
-          <div className={s.top_nfts_grid_won_value}>125</div>
-          <div className={s.top_nfts_grid_price_value}>
-            2.5 <span className={s.top_nfts_grid_currency}>ETH</span>
+          <div className={s.nfts_grid_body}>
+            <div className={s.nfts_grid_image_box}>
+              <div
+                style={{
+                  borderRadius: 50,
+                  width: 64,
+                  height: 64,
+                  backgroundColor: "pink",
+                }}
+              />
+            </div>
+            <div className={s.nfts_grid_name_val}>Legendary Artifact</div>
+            <div className={s.nfts_grid_rarity_val}>Legendary</div>
+            <div className={s.nfts_grid_total_val}>189</div>
+            <div className={s.nfts_grid_won_val}>125</div>
+            <div className={s.nfts_grid_price_val}>
+              2.5 <span className={s.nfts_grid_cur}>ETH</span>
+            </div>
           </div>
         </div>
       </div>
