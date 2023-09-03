@@ -1,4 +1,4 @@
-@import "../../sass//utils/mixins";
+@import "../../sass/utils/mixins";
 
 .nfts {
   @include container;
@@ -27,6 +27,23 @@
     display: grid;
     align-items: center;
 
+    th {
+      padding: 0;
+      background-color: var(--color-background);
+      border-bottom: 1px solid var(--color-accent);
+
+      @media screen and (min-width: 744px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 80px;
+
+        @include sub-title;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
     &_item {
       border-bottom: 1px solid var(--color-accent);
 
@@ -40,6 +57,10 @@
       }
 
       @media screen and (min-width: 744px) {
+        &:nth-child(odd) {
+          background-color: var(--color-table-bg-accent);
+        }
+
         &:nth-child(n + 2) .nfts_grid_header {
           display: none;
         }
@@ -57,42 +78,61 @@
     &_header {
       display: contents;
 
-      @media screen and (min-width: 800px) {
-        div {
-          word-wrap: break-word;
-        }
+      // &_title {
+      // @media screen and (min-width: 744px) {
+      //   display: flex;
+      //   flex-wrap: wrap;
+      //   align-items: center;
+      //   height: 80px;
+
+      //   @include sub-title;
+      //   padding-left: 16px;
+      //   padding-right: 16px;
+      // }
+
+      // @media screen and (min-width: 1440px) {
+      //   align-items: center;
+      // }
+      // }
+
+      @media screen and (max-width: 743px) {
+        color: var(--color-text-desc);
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        font-weight: 400;
       }
 
       @media screen and (min-width: 744px) {
-        // background-color: var(--color-background) !important;
-
-        // background-color: var(--color-table-bg-accent);
-
-        & > div {
-          @include sub-title;
-
-          padding-left: 16px;
-          padding-right: 16px;
-        }
-
-        & .nfts_grid_name {
+        & .nfts_grid_name span {
           padding-left: 24px;
         }
+
+        // & > th {
+        // @include sub-title;
+        // padding-left: 16px;
+        // padding-right: 16px;
+        // }
+
+        // & .nfts_grid_name {
+        //   padding-left: 24px;
+        // }
       }
 
-      @media screen and (min-width: 1440px) {
-        & > div {
-          padding-left: 24px;
-          padding-right: 24px;
-        }
-      }
+      // @media screen and (min-width: 1440px) {
+      //   & > th {
+      //     // padding-left: 24px;
+      //     // padding-right: 24px;
+      //   }
+      // }
     }
 
     &_body {
       display: contents;
 
       @media screen and (min-width: 744px) {
-        & > div {
+        & > td {
+          @include paragraph;
+
           padding-left: 24px;
           padding-right: 24px;
         }
@@ -113,26 +153,6 @@
           padding-right: 24px;
         }
       }
-    }
-
-    @media screen and (min-width: 744px) {
-      grid-template-columns:
-        64px minmax(240px, 300px) minmax(116px, 1fr) minmax(91px, 1fr) minmax(
-          93px,
-          1fr
-        )
-        minmax(98px, 1fr);
-
-      grid-template-rows: 80px 80px;
-
-      &_cur {
-        display: none;
-      }
-    }
-
-    @media screen and (min-width: 1440px) {
-      grid-template-columns: 64px 449px 180px 174px 170px 163px;
-      grid-template-rows: 60px 80px;
     }
 
     @media screen and (max-width: 743px) {
@@ -176,18 +196,21 @@
       }
 
       &_rarity_val {
+        @include paragraph;
         grid-column: 3 / 4;
         grid-row: 2 / 3;
         text-align: end;
       }
 
       &_total_val {
+        @include paragraph;
         grid-column: 3 / 4;
         grid-row: 3 / 4;
         text-align: end;
       }
 
       &_won_val {
+        @include paragraph;
         grid-column: 3 / 4;
         grid-row: 4 / 5;
         text-align: end;
@@ -198,6 +221,26 @@
         text-align: end;
         padding-bottom: 12px;
       }
+    }
+
+    @media screen and (min-width: 744px) {
+      grid-template-columns:
+        64px minmax(240px, 300px) minmax(116px, 1fr) minmax(91px, 1fr) minmax(
+          93px,
+          1fr
+        )
+        minmax(98px, 1fr);
+
+      grid-template-rows: 80px 80px;
+
+      &_cur {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      grid-template-columns: 64px 449px 180px 174px 170px 163px;
+      grid-template-rows: 60px 80px;
     }
   }
 }
