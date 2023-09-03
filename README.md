@@ -23,11 +23,8 @@ Current version provides a user-friendly interface to explore the world of NFT p
 ## For users
 
 Feel free to explore the application and interact with the various sections.
+You can view stunning NFT images from various projects. 
 Read about the StarRunner Blockchain Ecosystem, discover top NFTs, and join our community to connect with other NFT enthusiasts.
-
-### Hero
-
-In the Hero section, you can view stunning NFT images from various projects. This visually appealing section will captivate your attention and provide a glimpse into the world of digital art and collectibles.
 
 ### Features
 
