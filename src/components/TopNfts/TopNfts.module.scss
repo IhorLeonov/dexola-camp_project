@@ -1,25 +1,61 @@
 @import "../../sass/utils/mixins";
 
-.nfts {
-  @include container;
+.nfts_section {
+  @include section;
 
+  @media screen and (min-width: 744px) {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 126px;
+  }
+}
+
+.nfts {
   padding-top: 32px;
+
+  @media screen and (min-width: 744px) {
+    padding-top: 56px;
+    @include container;
+  }
 
   @media screen and (min-width: 1440px) {
     padding-top: 90px;
     padding-bottom: 65px;
   }
 
-  &_section {
-    @include section;
+  &_item {
+    border-bottom: 1px solid var(--color-accent);
 
-    @media screen and (min-width: 744px) {
-      padding-top: 90px;
-      padding-bottom: 0;
+    @media screen and (max-width: 743px) {
+      // padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
+
+      &:nth-child(even) {
+        background-color: var(--color-table-bg-accent);
+      }
+
+      &:nth-child(n + 2) {
+        padding-top: 16px;
+      }
     }
 
-    @media screen and (min-width: 1440px) {
-      padding-top: 126px;
+    @media screen and (min-width: 744px) {
+      &:nth-child(odd) {
+        background-color: var(--color-table-bg-accent);
+      }
+
+      &:nth-child(n + 2) .nfts_grid_header {
+        display: none;
+      }
+
+      &:nth-child(n + 2) .nfts_grid {
+        grid-template-rows: 80px;
+      }
     }
   }
 
@@ -28,46 +64,25 @@
     align-items: center;
 
     th {
-      padding: 0;
-      background-color: var(--color-background);
-      border-bottom: 1px solid var(--color-accent);
-
       @media screen and (min-width: 744px) {
+        @include sub-title;
+
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         height: 80px;
+        padding: 12px 16px;
 
-        @include sub-title;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
-    }
+        background-color: var(--color-background);
+        border-bottom: 1px solid var(--color-accent);
 
-    &_item {
-      border-bottom: 1px solid var(--color-accent);
-
-      @media screen and (max-width: 743px) {
-        padding-top: 16px;
-        padding-bottom: 16px;
-
-        &:nth-child(even) {
-          background-color: var(--color-table-bg-accent);
+        @media screen and (min-width: 1440px) {
+          height: 60px;
         }
       }
 
-      @media screen and (min-width: 744px) {
-        &:nth-child(odd) {
-          background-color: var(--color-table-bg-accent);
-        }
-
-        &:nth-child(n + 2) .nfts_grid_header {
-          display: none;
-        }
-
-        &:nth-child(n + 2) .nfts_grid {
-          grid-template-rows: 80px;
-        }
+      @media screen and (max-width: 973px) {
+        flex-wrap: wrap;
       }
     }
 
@@ -78,23 +93,6 @@
     &_header {
       display: contents;
 
-      // &_title {
-      // @media screen and (min-width: 744px) {
-      //   display: flex;
-      //   flex-wrap: wrap;
-      //   align-items: center;
-      //   height: 80px;
-
-      //   @include sub-title;
-      //   padding-left: 16px;
-      //   padding-right: 16px;
-      // }
-
-      // @media screen and (min-width: 1440px) {
-      //   align-items: center;
-      // }
-      // }
-
       @media screen and (max-width: 743px) {
         color: var(--color-text-desc);
         font-size: 14px;
@@ -103,27 +101,22 @@
       }
 
       @media screen and (min-width: 744px) {
-        & .nfts_grid_name span {
-          padding-left: 24px;
+        & .nfts_grid_name {
+          @media screen and (max-width: 938px) {
+            align-items: start;
+          }
         }
 
-        // & > th {
-        // @include sub-title;
-        // padding-left: 16px;
-        // padding-right: 16px;
-        // }
-
-        // & .nfts_grid_name {
-        //   padding-left: 24px;
-        // }
+        .nfts_grid_rarity_span {
+          margin-right: 5px;
+        }
       }
 
-      // @media screen and (min-width: 1440px) {
-      //   & > th {
-      //     // padding-left: 24px;
-      //     // padding-right: 24px;
-      //   }
-      // }
+      @media screen and (min-width: 1440px) {
+        & .nfts_grid_name {
+          padding-left: 24px;
+        }
+      }
     }
 
     &_body {
@@ -139,7 +132,6 @@
 
         & > .nfts_grid_rarity_val {
           padding-left: 16px;
-          padding-right: 16px;
         }
 
         & > .nfts_grid_image_box {
@@ -161,7 +153,7 @@
 
       &_void,
       &_name,
-      &_level,
+      &_level_span,
       &_price {
         display: none;
       }

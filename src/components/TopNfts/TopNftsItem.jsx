@@ -2,31 +2,21 @@ import s from "./TopNfts.module.scss";
 
 export const TopItem = ({ name, rarity, total, won, price, avatar }) => {
   return (
-    <li className={s.nfts_grid_item}>
+    <li className={s.nfts_item}>
       <table className={s.nfts_grid}>
         {/* header */}
         <tr className={s.nfts_grid_header}>
-          <th className={s.nfts_grid_void}>
-            <span className={s.nfts_grid_header_title} />
-          </th>
+          <th className={s.nfts_grid_void}></th>
           <th className={s.nfts_grid_name}>
             <span className={s.nfts_grid_header_title}>NFT Name</span>
           </th>
           <th className={s.nfts_grid_rarity}>
-            <span className={s.nfts_grid_header_title}>
-              Rarity
-              <span className={s.nfts_grid_level}>Level</span>
-            </span>
+            <span className={s.nfts_grid_rarity_span}>Rarity</span>
+            <span className={s.nfts_grid_level_span}> Level</span>
           </th>
-          <th className={s.nfts_grid_total}>
-            <span className={s.nfts_grid_header_title}>Total games</span>
-          </th>
-          <th className={s.nfts_grid_won}>
-            <span className={s.nfts_grid_header_title}>Games Won</span>
-          </th>
-          <th className={s.nfts_grid_price}>
-            <span className={s.nfts_grid_header_title}>Price (ETH)</span>
-          </th>
+          <th className={s.nfts_grid_total}>Total games</th>
+          <th className={s.nfts_grid_won}>Games Won</th>
+          <th className={s.nfts_grid_price}>Price (ETH)</th>
         </tr>
         {/* body */}
         <tr className={s.nfts_grid_body}>
