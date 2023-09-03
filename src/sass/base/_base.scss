@@ -39,19 +39,4 @@ button {
 p,
 input {
   @include paragraph;
-
-  // color: var(--color-text-desc);
-  // font-size: 14px;
-  // letter-spacing: -0.28px;
-  // font-weight: 400;
-
-  // @media screen and (min-width: 744px) {
-  //   font-size: 16px;
-  //   letter-spacing: -0.32px;
-  // }
-
-  // @media screen and (min-width: 1440px) {
-  //   letter-spacing: -0.36px;
-  //   font-size: 18px;
-  // }
 }

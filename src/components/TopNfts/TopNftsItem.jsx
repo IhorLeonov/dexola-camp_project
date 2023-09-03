@@ -7,9 +7,7 @@ export const TopItem = ({ name, rarity, total, won, price, avatar }) => {
         {/* header */}
         <tr className={s.nfts_grid_header}>
           <th className={s.nfts_grid_void}></th>
-          <th className={s.nfts_grid_name}>
-            <span className={s.nfts_grid_header_title}>NFT Name</span>
-          </th>
+          <th className={s.nfts_grid_name}>NFT Name</th>
           <th className={s.nfts_grid_rarity}>
             <span className={s.nfts_grid_rarity_span}>Rarity</span>
             <span className={s.nfts_grid_level_span}> Level</span>
