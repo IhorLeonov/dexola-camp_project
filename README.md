@@ -1,6 +1,6 @@
 ## Overview
 
-Welcome to the Dexola Camp landing page app!
+Welcome to the Dexola Camp app!
 This application was built with Vite, React.js, Sass.
 Current version provides a user-friendly interface to explore the world of NFT projects, featuring an eye-catching NFT images, information about the StarRunner Blockchain Ecosystem, list of top NFTs, and form to connect with our community.
 
