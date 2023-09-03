@@ -1,5 +1,3 @@
-# Dexola Camp
-
 ## Overview
 
 Welcome to the Dexola Camp landing page app!
