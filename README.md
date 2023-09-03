@@ -1,8 +1,47 @@
-# React + Vite
+# Dexola Camp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Welcome to the Dexola Camp landing page app!
+This application was built with Vite, React.js, Sass.
+Current version provides a user-friendly interface to explore the world of NFT projects, featuring an eye-catching NFT images, information about the StarRunner Blockchain Ecosystem, list of top NFTs, and form to connect with our community.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## For users
+
+Feel free to explore the application and interact with the various sections.
+Read about the StarRunner Blockchain Ecosystem, discover top NFTs, and join our community to connect with other NFT enthusiasts.
+
+### Hero
+
+In the Hero section, you can view stunning NFT images from various projects. This visually appealing section will captivate your attention and provide a glimpse into the world of digital art and collectibles.
+
+### Features
+
+The Feature section contains comprehensive information about the StarRunner Blockchain Ecosystem. Learn about its unique features, advantages, and how it's transforming the NFT space. Stay updated with the latest developments in the blockchain world.
+
+### Top NFTs
+
+Browse list of the top NFTs in this section. Discover the most valuable, trending, and innovative NFT. Get insights about rarity
+level and current market prices.
+
+### Join Us
+
+Ready to become part of the NFT community? Use the Join Us form to connect with like-minded individuals, enthusiasts, and creators. Share your thoughts, ideas, and stay updated on the latest NFT news, events, and opportunities.
+
+## For dev
+
+### 1. Before running the application, make sure you have installed Node.js
+
+### 2. Clone this repository to your local machine:
+
+- git clone [https://github.com/IhorLeonov/dexola-camp_project](https://github.com/IhorLeonov/dexola-camp_project.git)
+
+- cd dexola-camp_project
+
+### 3. Install the dependencies:
+
+- npm install
+
+### 4. Start the development server:
+
+- npm start

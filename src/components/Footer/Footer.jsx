@@ -7,29 +7,41 @@ export const Footer = () => {
       <div className={s.footer_container}>
         <ul className={s.footer_socials + " " + s.footer_item}>
           <li className={s.socials_list_item}>
-            <Icon id="facebook" />
+            <a
+              href="https://www.facebook.com/trinetix"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Icon id="facebook" />
+            </a>
           </li>
           <li className={s.socials_list_item}>
-            <Icon id="instagram" />
+            <a
+              href="https://www.instagram.com/trinetix_inc/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Icon id="instagram" />
+            </a>
           </li>
           <li className={s.socials_list_item}>
-            <Icon id="discord" />
+            <a href="https://dexola.com/" target="_blank" rel="noreferrer">
+              <Icon id="discord" />
+            </a>
           </li>
           <li className={s.socials_list_item}>
-            <Icon id="telegram" />
+            <a href="https://dexola.com/" target="_blank" rel="noreferrer">
+              <Icon id="telegram" />
+            </a>
           </li>
         </ul>
         <div className={s.footer_company_info}>
-          {/* <div className={s.footer_designed + " " + s.footer_item}> */}
           <p className={s.footer_designed + " " + s.footer_item}>
             Designed by Dexola - 2023
           </p>
-          {/* </div> */}
-          {/* <div className={s.footer_copyright + " " + s.footer_item}> */}
           <p className={s.footer_copyright + " " + s.footer_item}>
             © All rights reserved
           </p>
-          {/* </div> */}
         </div>
       </div>
     </footer>
