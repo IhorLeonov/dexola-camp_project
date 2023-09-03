@@ -6,19 +6,17 @@ Current version provides a user-friendly interface to explore the world of NFT p
 
 ## For dev
 
-### 1. Before running the application, make sure you have installed Node.js
-
-### 2. Clone this repository to your local machine:
+### 1. Clone this repository to your local machine:
 
 - git clone [https://github.com/IhorLeonov/dexola-camp_project](https://github.com/IhorLeonov/dexola-camp_project.git)
 
 - cd dexola-camp_project
 
-### 3. Install the dependencies:
+### 2. Install the dependencies:
 
 - npm install
 
-### 4. Start the development server:
+### 3. Start the development server:
 
 - npm start
 
