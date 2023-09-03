@@ -4,7 +4,7 @@ import { TopItem } from "./TopNftsItem";
 
 export const TopList = () => {
   return (
-    <tr className={s.top_list}>
+    <ul className={s.top_list}>
       {data.map(({ id, name, rarity, total, won, price, avatar }) => {
         return (
           <TopItem
@@ -18,6 +18,6 @@ export const TopList = () => {
           />
         );
       })}
-    </tr>
+    </ul>
   );
 };
