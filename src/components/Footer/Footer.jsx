@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className={s.footer}>
       <div className={s.footer_container}>
         <ul className={s.footer_socials + " " + s.footer_item}>
-          <li className={s.socials_list_item}>
+          <li className={s.footer_socials_item}>
             <a
               href="https://www.facebook.com/trinetix"
               target="_blank"
@@ -15,7 +15,7 @@ export const Footer = () => {
               <Icon id="facebook" />
             </a>
           </li>
-          <li className={s.socials_list_item}>
+          <li className={s.footer_socials_item}>
             <a
               href="https://www.instagram.com/trinetix_inc/"
               target="_blank"
@@ -24,12 +24,12 @@ export const Footer = () => {
               <Icon id="instagram" />
             </a>
           </li>
-          <li className={s.socials_list_item}>
+          <li className={s.footer_socials_item}>
             <a href="https://dexola.com/" target="_blank" rel="noreferrer">
               <Icon id="discord" />
             </a>
           </li>
-          <li className={s.socials_list_item}>
+          <li className={s.footer_socials_item}>
             <a href="https://dexola.com/" target="_blank" rel="noreferrer">
               <Icon id="telegram" />
             </a>
