@@ -1,19 +1,30 @@
-# Dexola Camp
-
 ## Overview
 
-Welcome to the Dexola Camp landing page app!
+Welcome to the Dexola Camp app!
 This application was built with Vite, React.js, Sass.
 Current version provides a user-friendly interface to explore the world of NFT projects, featuring an eye-catching NFT images, information about the StarRunner Blockchain Ecosystem, list of top NFTs, and form to connect with our community.
+
+## For dev
+
+### 1. Clone this repository to your local machine:
+
+- git clone [https://github.com/IhorLeonov/dexola-camp_project](https://github.com/IhorLeonov/dexola-camp_project.git)
+
+- cd dexola-camp_project
+
+### 2. Install the dependencies:
+
+- npm install
+
+### 3. Start the development server:
+
+- npm start
 
 ## For users
 
 Feel free to explore the application and interact with the various sections.
+You can view stunning NFT images from various projects. 
 Read about the StarRunner Blockchain Ecosystem, discover top NFTs, and join our community to connect with other NFT enthusiasts.
-
-### Hero
-
-In the Hero section, you can view stunning NFT images from various projects. This visually appealing section will captivate your attention and provide a glimpse into the world of digital art and collectibles.
 
 ### Features
 
@@ -28,20 +39,4 @@ level and current market prices.
 
 Ready to become part of the NFT community? Use the Join Us form to connect with like-minded individuals, enthusiasts, and creators. Share your thoughts, ideas, and stay updated on the latest NFT news, events, and opportunities.
 
-## For dev
 
-### 1. Before running the application, make sure you have installed Node.js
-
-### 2. Clone this repository to your local machine:
-
-- git clone [https://github.com/IhorLeonov/dexola-camp_project](https://github.com/IhorLeonov/dexola-camp_project.git)
-
-- cd dexola-camp_project
-
-### 3. Install the dependencies:
-
-- npm install
-
-### 4. Start the development server:
-
-- npm start
