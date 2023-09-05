@@ -1,6 +1,6 @@
 import s from "./TopNfts.module.scss";
 
-export const TopItem = ({ name, rarity, total, won, price, avatar }) => {
+export const TopItem = ({ name, rarity, total, won, price, image }) => {
   return (
     <li className={s.nfts_item}>
       <table className={s.nfts_grid}>
@@ -24,7 +24,7 @@ export const TopItem = ({ name, rarity, total, won, price, avatar }) => {
             <td className={s.nfts_grid_image_box}>
               <img
                 className={s.nfts_grid_image}
-                src={avatar}
+                src={image}
                 alt="NFT picture"
               />
             </td>

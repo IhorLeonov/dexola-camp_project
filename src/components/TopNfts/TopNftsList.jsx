@@ -1,11 +1,13 @@
 import s from "./TopNfts.module.scss";
 import data from "../../assets/topNfts.json";
 import { TopItem } from "./TopNftsItem";
+// import { nftImages } from "../../helpers/imagesPath.js";
 
 export const TopList = () => {
   return (
     <ul className={s.top_list}>
-      {data.map(({ id, name, rarity, total, won, price, avatar }) => {
+      {data.map(({ id, name, rarity, total, won, price, image }) => {
+        // nftImages.map();
         return (
           <TopItem
             key={id}
@@ -14,7 +16,7 @@ export const TopList = () => {
             total={total}
             price={price}
             won={won}
-            avatar={avatar}
+            image={image}
           />
         );
       })}
