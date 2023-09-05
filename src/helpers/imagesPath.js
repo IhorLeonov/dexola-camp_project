@@ -34,6 +34,7 @@ import astr3desc1x from "../assets/images/features/astronaut-3_desc-@1x.jpg";
 import astr3desc2x from "../assets/images/features/astronaut-3_desc-@2x.jpg";
 
 // top nfts images
+import avatar0 from "../assets/images/topNfts/legendary-artifact.jpg";
 import avatar1 from "../assets/images/topNfts/legendary-artifact.jpg";
 import avatar2 from "../assets/images/topNfts/epic-warrior.jpg";
 import avatar3 from "../assets/images/topNfts/mystic-spellbook.jpg";
@@ -77,4 +78,11 @@ export const featureImages = {
   astr3desc2x,
 };
 
-export const nftsImages = [avatar1, avatar2, avatar3, avatar4, avatar5];
+export const nftsImages = [
+  avatar0,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
+];
