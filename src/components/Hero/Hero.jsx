@@ -11,54 +11,36 @@ export const Hero = () => {
       indexFirst >= heroLeftImages.length - 1
         ? setIndexFirst(0)
         : setIndexFirst(indexFirst + 1);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [indexFirst]);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     indexSecond >= heroRightImages.length - 1
-  //       ? setIndexSecond(0)
-  //       : setIndexSecond(indexSecond + 1);
-  //   }, 7500);
-  //   return () => clearInterval(interval);
-  // }, [indexSecond]);
+  useEffect(() => {
+    // const timeout = setTimeout(() => {
+    const secondInterval = setInterval(() => {
+      indexSecond >= heroRightImages.length - 1
+        ? setIndexSecond(0)
+        : setIndexSecond(indexSecond + 1);
+    }, 5000);
+    return () => clearInterval(secondInterval);
+    // }, 2500);
+    // return () => clearTimeout(timeout);
+  }, [indexSecond]);
 
   return (
     <section className={s.hero_section}>
       <div className={s.hero_wrapper}>
         <div className={s.hero_img_list + " " + s.hero_container}>
-          <div className={s.hero_img_box}>
+          <div className={s.hero_img_container}>
             <img
-              className={s.hero_image}
+              className={s.hero_image + " " + s.hero_image_left}
               src={heroLeftImages[indexFirst]}
               alt="NFT picture"
             />
           </div>
-          <div className={s.hero_img_box}>
+          <div className={s.hero_img_container}>
             <img
-              className={s.hero_image}
-              src={heroRightImages[indexSecond]}
-              alt="NFT picture"
-            />
-          </div>
-        </div>
-
-        <div
-          className={
-            s.hero_img_list + " " + s.hero_container + " " + s.hero_img_list_abs
-          }
-        >
-          <div className={s.hero_img_box}>
-            <img
-              className={s.hero_image}
-              src={heroLeftImages[indexFirst]}
-              alt="NFT picture"
-            />
-          </div>
-          <div className={s.hero_img_box}>
-            <img
-              className={s.hero_image}
+              className={s.hero_image + " " + s.hero_image_right}
               src={heroRightImages[indexSecond]}
               alt="NFT picture"
             />
