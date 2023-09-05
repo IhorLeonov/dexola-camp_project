@@ -1,8 +1,9 @@
-$roboto-font-path: "/fonts/Roboto_Mono";
-$kanit-font-path: "/fonts/Kanit";
+$roboto-path: "/fonts/Roboto_Mono";
+$kanit-path: "/fonts/Kanit";
+$swiss-path: "/fonts/Swiss";
 
 @font-face {
-  src: url($roboto-font-path + "/RobotoMono-Regular.ttf") format("truetype");
+  src: url($roboto-path + "/RobotoMono-Regular.ttf") format("truetype");
 
   font-family: "Roboto Mono";
   font-weight: 400;
@@ -10,7 +11,7 @@ $kanit-font-path: "/fonts/Kanit";
 }
 
 @font-face {
-  src: url($kanit-font-path + "/Kanit-Regular.ttf") format("truetype");
+  src: url($kanit-path + "/Kanit-Regular.ttf") format("truetype");
 
   font-family: "Kanit Regular";
   font-weight: 400;
@@ -18,9 +19,25 @@ $kanit-font-path: "/fonts/Kanit";
 }
 
 @font-face {
-  src: url($kanit-font-path + "/Kanit-Medium.ttf") format("truetype");
+  src: url($kanit-path + "/Kanit-Medium.ttf") format("truetype");
 
   font-family: "Kanit Medium";
   font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  src: url($swiss-path + "/Swiss-721-Medium-BT.ttf") format("truetype");
+
+  font-family: "Swiss Medium";
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  src: url($swiss-path + "/Swiss-721-BT-Font.ttf") format("truetype");
+
+  font-family: "Swiss";
+  font-weight: 400;
   font-display: swap;
 }

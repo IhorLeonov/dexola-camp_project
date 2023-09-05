@@ -4,7 +4,7 @@ import { FeaturesList } from "./FeatyresList";
 
 export const Features = () => {
   return (
-    <section className={s.features_section}>
+    <section id="features" className={s.features_section}>
       <Title name="Features" numb="01" />
       <div className={s.features}>
         <div className={s.features_about}>
