@@ -62,6 +62,11 @@
     display: grid;
     align-items: center;
 
+    thead,
+    tbody {
+      display: contents;
+    }
+
     th,
     td {
       padding: 0;

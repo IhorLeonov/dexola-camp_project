@@ -6,9 +6,9 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header_container}>
-        <div className="logo">
+        <a href="https://dexola.com/" target="_blank" rel="noreferrer">
           <Icon id="logo" />
-        </div>
+        </a>
         <a href="#join">
           <button className={styles.header_btn} type="button">
             <img src={arrowIcon} alt="Arrow" />

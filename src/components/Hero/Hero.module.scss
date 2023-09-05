@@ -41,7 +41,7 @@
 
   &_title {
     display: inline-block;
-    // padding-left: 100%;
+    padding-left: 100%;
     line-height: 1.25;
     font-weight: 500;
     text-transform: uppercase;
@@ -57,17 +57,18 @@
     }
 
     // -webkit-animation: marquee 15s infinite linear;
-    // animation: marquee 10s infinite linear;
+    animation: marquee 10s infinite linear;
   }
 
-  @-webkit-keyframes marquee {
-    0% {
-      -webkit-transform: translate(0, 0);
-    }
-    100% {
-      -webkit-transform: translate(-100%, 0);
-    }
-  }
+  // @-webkit-keyframes marquee {
+  //   0% {
+  //     -webkit-transform: translate(0, 0);
+  //   }
+  //   100% {
+  //     -webkit-transform: translate(-100%, 0);
+  //   }
+  // }
+
   @keyframes marquee {
     0% {
       transform: translate(0, 0);
@@ -87,17 +88,31 @@
     }
   }
 
-  &_img_box {
+  &_img_list {
     display: flex;
+    position: relative;
   }
 
-  &_image {
-    width: 163.5px;
-    height: 311px;
+  &_img_list_abs {
+    // display: flex;
+    position: absolute;
+    transform: translate(0, 0%);
+  }
+
+  &_img_box {
+    display: flex;
+    width: 100%;
+    min-width: 163.5px;
+    min-height: 311px;
     border-right: 1px solid var(--color-accent);
 
     &:nth-child(1) {
       border-left: 1px solid var(--color-accent);
+    }
+
+    @media screen and (min-width: 744px) {
+      min-width: 348px;
+      min-height: 311px;
     }
 
     @media screen and (max-width: 1439px) {
@@ -106,7 +121,50 @@
     }
 
     @media screen and (min-width: 1440px) {
-      width: 233px;
+      min-width: 233px;
+      max-width: 233px;
+    }
+  }
+
+  &_image {
+    object-fit: cover;
+    opacity: 0.1;
+    animation: show 25s linear infinite;
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 

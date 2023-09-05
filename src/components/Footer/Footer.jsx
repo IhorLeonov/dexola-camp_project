@@ -30,7 +30,7 @@ export const Footer = () => {
             </a>
           </li>
           <li className={s.footer_socials_item}>
-            <a href="https://dexola.com/" target="_blank" rel="noreferrer">
+            <a href="https://t.me/dexolainc" target="_blank" rel="noreferrer">
               <Icon id="telegram" />
             </a>
           </li>

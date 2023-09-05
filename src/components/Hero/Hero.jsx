@@ -1,23 +1,70 @@
 import s from "./Hero.module.scss";
-import firstImage from "../../assets/images/test-img-1.jpg";
-import secondImage from "../../assets/images/test-img-2.jpg";
+import { heroLeftImages, heroRightImages } from "../../helpers/imagesPath";
+import { useEffect, useState } from "react";
 
 export const Hero = () => {
+  const [indexFirst, setIndexFirst] = useState(0);
+  const [indexSecond, setIndexSecond] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      indexFirst >= heroLeftImages.length - 1
+        ? setIndexFirst(0)
+        : setIndexFirst(indexFirst + 1);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [indexFirst]);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     indexSecond >= heroRightImages.length - 1
+  //       ? setIndexSecond(0)
+  //       : setIndexSecond(indexSecond + 1);
+  //   }, 7500);
+  //   return () => clearInterval(interval);
+  // }, [indexSecond]);
+
   return (
     <section className={s.hero_section}>
       <div className={s.hero_wrapper}>
-        <div className={s.hero_img_box + " " + s.hero_container}>
-          <img
-            className={s.hero_image}
-            src={firstImage}
-            alt="First NFT picture"
-          />
-          <img
-            className={s.hero_image}
-            src={secondImage}
-            alt="Second NFT picture"
-          />
+        <div className={s.hero_img_list + " " + s.hero_container}>
+          <div className={s.hero_img_box}>
+            <img
+              className={s.hero_image}
+              src={heroLeftImages[indexFirst]}
+              alt="NFT picture"
+            />
+          </div>
+          <div className={s.hero_img_box}>
+            <img
+              className={s.hero_image}
+              src={heroRightImages[indexSecond]}
+              alt="NFT picture"
+            />
+          </div>
         </div>
+
+        <div
+          className={
+            s.hero_img_list + " " + s.hero_container + " " + s.hero_img_list_abs
+          }
+        >
+          <div className={s.hero_img_box}>
+            <img
+              className={s.hero_image}
+              src={heroLeftImages[indexFirst]}
+              alt="NFT picture"
+            />
+          </div>
+          <div className={s.hero_img_box}>
+            <img
+              className={s.hero_image}
+              src={heroRightImages[indexSecond]}
+              alt="NFT picture"
+            />
+          </div>
+        </div>
+
         <div className={s.hero_title_wrapper}>
           <h1 className={s.hero_title}>Dexola camp</h1>
         </div>

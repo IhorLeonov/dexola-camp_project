@@ -1,3 +1,17 @@
+// hero images
+import img1_left from "../assets/images/hero/img1_left-1x.jpg";
+import img2_left from "../assets/images/hero/img2_left-1x.jpg";
+import img3_left from "../assets/images/hero/img3_left-1x.jpg";
+import img4_left from "../assets/images/hero/img4_left-1x.jpg";
+import img5_left from "../assets/images/hero/img5_left-1x.jpg";
+
+import img1_right from "../assets/images/hero/img1_right-1x.jpg";
+import img2_right from "../assets/images/hero/img2_right-1x.jpg";
+import img3_right from "../assets/images/hero/img3_right-1x.jpg";
+import img4_right from "../assets/images/hero/img4_right-1x.jpg";
+import img5_right from "../assets/images/hero/img5_right-1x.jpg";
+
+// features images
 import astr1mob1x from "../assets/images/features/astronaut-1_mob-@1x.jpg";
 import astr1mob2x from "../assets/images/features/astronaut-1_mob-@2x.jpg";
 import astr1tab1x from "../assets/images/features/astronaut-1_tab-@1x.jpg";
@@ -18,6 +32,22 @@ import astr3tab1x from "../assets/images/features/astronaut-3_tab-@1x.jpg";
 import astr3tab2x from "../assets/images/features/astronaut-3_tab-@2x.jpg";
 import astr3desc1x from "../assets/images/features/astronaut-3_desc-@1x.jpg";
 import astr3desc2x from "../assets/images/features/astronaut-3_desc-@2x.jpg";
+
+export const heroLeftImages = [
+  img1_left,
+  img2_left,
+  img3_left,
+  img4_left,
+  img5_left,
+];
+
+export const heroRightImages = [
+  img1_right,
+  img2_right,
+  img3_right,
+  img4_right,
+  img5_right,
+];
 
 export const featureImages = {
   astr1mob1x,
