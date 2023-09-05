@@ -105,7 +105,6 @@
 
     // min-width: 163.5px;
     min-height: 311px;
-
     border-right: 1px solid var(--color-accent);
 
     &:nth-child(1) {
@@ -130,17 +129,42 @@
   }
 
   &_image {
+    display: none;
     width: calc((100vw - 51px) / 2);
     object-fit: cover;
     opacity: 0;
+    // transition: opacity;
+    // transition: opacity 0.3s linear;
+    animation: show 3s linear infinite;
+  }
+
+  &_image_visible {
+    display: block;
+    opacity: 1;
   }
 
   &_image_left {
-    animation: left 30s linear infinite;
+    animation: show 4s linear infinite;
+
+    // animation: left 30s linear infinite;
   }
 
   &_image_right {
-    animation: left 25s linear infinite;
+    animation: show 5.5s linear infinite;
+
+    // animation: left 25s linear infinite;
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.1;
+    }
   }
 
   @keyframes left {
