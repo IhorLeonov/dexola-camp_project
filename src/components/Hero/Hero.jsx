@@ -11,7 +11,7 @@ export const Hero = () => {
       indexFirst >= heroLeftImages.length - 1
         ? setIndexFirst(0)
         : setIndexFirst(indexFirst + 1);
-    }, 5500);
+    }, 5900);
     return () => clearInterval(interval);
   }, [indexFirst]);
 
@@ -21,7 +21,7 @@ export const Hero = () => {
       indexSecond >= heroRightImages.length - 1
         ? setIndexSecond(0)
         : setIndexSecond(indexSecond + 1);
-    }, 4500);
+    }, 4900);
     return () => clearInterval(secondInterval);
     // }, 2500);
     // return () => clearTimeout(timeout);
