@@ -30,14 +30,21 @@
   }
 }
 
-.section {
-  height: 810px;
+@keyframes move {
+  100% {
+    transform: translateY(-400px);
+  }
 }
 
-.animation {
+.section {
+  height: 810px;
+
   @media screen and (max-width: 1439px) {
     display: none;
   }
+}
+
+.animation {
   position: relative;
   display: none;
 
@@ -73,17 +80,19 @@
   &_back {
     position: absolute;
     left: 0;
-    top: 100px;
+    // top: 100px;
+    top: 500px;
 
     width: 100%;
     height: 916px;
 
-    border-radius: 50%;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
 
     background-color: #10147e;
     box-shadow: inset 9px 83px 300px 100px rgb(6, 4, 18);
+    animation: move 3s linear;
+    animation-fill-mode: forwards;
   }
 
   &_big_ellipse {
@@ -122,6 +131,8 @@
   }
 
   &_ellipse {
+    z-index: 300;
+
     position: absolute;
     top: 370px;
     width: 100px;

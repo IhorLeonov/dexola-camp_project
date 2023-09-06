@@ -110,6 +110,7 @@ export const JoinUsForm = () => {
                 className={s.join_form_password_btn}
                 type="button"
                 onClick={() => setShowPass(!showPass)}
+                name="Eye"
               >
                 <Icon id={showPass ? "eye-open" : "eye-close"} />
               </button>
@@ -135,6 +136,7 @@ export const JoinUsForm = () => {
                 className={s.join_form_password_btn}
                 type="button"
                 onClick={() => setShowConfirm(!showConfirm)}
+                name="Eye"
               >
                 <Icon id={showConfirm ? "eye-open" : "eye-close"} />
               </button>

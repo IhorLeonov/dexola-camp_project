@@ -7,12 +7,6 @@ export const Animation = () => {
     rootMargin: "-100px 0px",
   });
 
-  //   const addClass = () => {
-  //     inView ? "show" : "";
-  //   };
-
-  inView && console.log("congratulations!");
-
   return (
     <section ref={ref} className={s.section}>
       <div className={s.animation + " " + `${inView && "show"}`}>
