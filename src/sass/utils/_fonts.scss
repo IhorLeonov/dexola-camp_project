@@ -7,7 +7,7 @@ $swiss-path: "/fonts/Swiss";
 
   font-family: "Roboto Mono";
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -15,7 +15,7 @@ $swiss-path: "/fonts/Swiss";
 
   font-family: "Kanit Regular";
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -23,7 +23,7 @@ $swiss-path: "/fonts/Swiss";
 
   font-family: "Kanit Medium";
   font-weight: 500;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -31,7 +31,7 @@ $swiss-path: "/fonts/Swiss";
 
   font-family: "Swiss Medium";
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -39,5 +39,5 @@ $swiss-path: "/fonts/Swiss";
 
   font-family: "Swiss";
   font-weight: 400;
-  font-display: swap;
+  font-display: fallback;
 }

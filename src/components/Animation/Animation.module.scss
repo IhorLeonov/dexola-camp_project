@@ -1,25 +1,82 @@
 @import "../../sass/utils/mixins";
 
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes zoom {
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    scale: 50;
+  }
+}
+
+@keyframes display {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.section {
+  height: 810px;
+}
+
 .animation {
   @media screen and (max-width: 1439px) {
     display: none;
   }
   position: relative;
-  display: flex;
+  display: none;
+
   justify-content: center;
   padding-top: 92px;
-  border-top: 1px solid var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
-
   height: 810px;
   overflow: hidden;
 
+  :nth-child(3) {
+    animation-delay: 1700ms;
+  }
+
+  :nth-child(4) {
+    animation-delay: 200ms;
+  }
+
+  :nth-child(5) {
+    animation-delay: 400ms;
+  }
+
+  :nth-child(6) {
+    animation-delay: 600ms;
+  }
+
+  :nth-child(7) {
+    animation-delay: 800ms;
+  }
+
+  :nth-child(8) {
+    animation-delay: 1100ms;
+  }
+
   &_back {
     position: absolute;
-    width: 100%;
-    height: 916px;
     left: 0;
     top: 100px;
+
+    width: 100%;
+    height: 916px;
 
     border-radius: 50%;
     border-bottom-left-radius: 0;
@@ -29,7 +86,8 @@
     box-shadow: inset 9px 83px 300px 100px rgb(6, 4, 18);
   }
 
-  &_ellipse {
+  &_big_ellipse {
+    z-index: 1;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -37,12 +95,16 @@
 
     width: 994px;
     height: 617px;
-    border-radius: 50%;
-    border: 2px solid var(--color-accent);
-    z-index: 1;
 
     text-transform: uppercase;
     font-weight: 400;
+    border-radius: 50%;
+    border: 2px solid var(--color-accent);
+    opacity: 0;
+
+    animation: display 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
   }
 
   &_sub_title {
@@ -59,64 +121,66 @@
     line-height: 1.25;
   }
 
-  &_pointer {
+  &_ellipse {
     position: absolute;
+    top: 370px;
+    width: 100px;
+    height: 60px;
+
+    border-radius: 50%;
+    border: 1px solid var(--color-accent);
     z-index: 2;
+    opacity: 0;
+
+    animation: zoom 8s;
+  }
+
+  &_ellipse_vertical {
+    width: 60px;
+    height: 100px;
+    top: 350px;
+  }
+
+  &_pointer {
+    z-index: 2;
+    position: absolute;
+    bottom: 40px;
+    right: 120px;
+
     width: 90px;
     height: 90px;
+
     border: 1px solid;
     border-radius: 50%;
-    bottom: 40px;
-    right: 70px;
+    opacity: 0;
+
+    animation: display 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
 
     &_arrow {
-      left: 35px;
       position: absolute;
+      left: 35px;
       width: 20px;
       height: 20px;
+
       border-bottom: 1px solid;
       border-right: 1px solid;
+
       transform: rotate(45deg);
-
-      animation: shy 2s linear infinite;
-    }
-
-    @keyframes shy {
-      0% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 0.1;
-      }
+      animation: arrow 2s linear infinite;
     }
 
     :nth-child(1) {
-      top: 15px;
+      top: 20px;
     }
     :nth-child(2) {
-      top: 25px;
+      top: 30px;
       animation-delay: 500ms;
     }
     :nth-child(3) {
-      top: 35px;
-      animation-delay: 750ms;
-    }
-    :nth-child(4) {
-      top: 45px;
+      top: 40px;
       animation-delay: 1000ms;
     }
   }
-
-  //   &_pointer::after {
-  //     content: "";
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     // width: 100%;
-  //     // height: 100%;
-  //     // transform: skew(30deg) translateX(100%);
-  //     // opacity: 0.3;
-  //     // transition: all 0.6s ease;
-  //   }
 }
