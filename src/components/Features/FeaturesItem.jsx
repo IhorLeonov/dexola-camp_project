@@ -16,7 +16,13 @@ export const FeaturesItem = ({ id, title, body }) => {
         <p className={s.features_item_desc}>{body}</p>
         <button type="button" className={s.features_btn}>
           <img src={arrowIcon} alt="Arrow" />
-          Discover now
+          <a
+            href="https://starrunner-staking.vercel.app/stake"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Discover now
+          </a>
         </button>
       </div>
     </li>
